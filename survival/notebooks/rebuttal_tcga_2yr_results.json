@@ -1,0 +1,127 @@
+[
+  {
+    "cohort": "TCGA-BRCA (breast)",
+    "n": 1083,
+    "n_events": 151,
+    "median_fu_months": 28.25,
+    "horizon_months": 24,
+    "n_dropped_by_binary": 442,
+    "pct_dropped": 0.40812557710064634,
+    "binary_mb": [
+      "adj_pharm",
+      "adj_radiation",
+      "n_stage",
+      "pr_status",
+      "stage_overall"
+    ],
+    "sabn_mb": [
+      "age",
+      "menopause",
+      "n_stage",
+      "pr_status",
+      "stage_overall"
+    ],
+    "sa_only": [
+      "age",
+      "menopause"
+    ],
+    "binary_only": [
+      "adj_pharm",
+      "adj_radiation"
+    ],
+    "jaccard": 0.42857142857142855,
+    "binary": {
+      "k": 5,
+      "harrell_c": 0.6519705566630885,
+      "uno_ipcw_c": 0.6272481507895263,
+      "tauc": 0.6472099075387122,
+      "ibs": 0.08114392452496845
+    },
+    "sabn": {
+      "k": 5,
+      "harrell_c": 0.7109339058426621,
+      "uno_ipcw_c": 0.696771756084277,
+      "tauc": 0.7238365110180911,
+      "ibs": 0.07735294531556335
+    }
+  },
+  {
+    "cohort": "TCGA-COAD (colorectal)",
+    "n": 605,
+    "n_events": 125,
+    "median_fu_months": 22.34,
+    "horizon_months": 24,
+    "n_dropped_by_binary": 239,
+    "pct_dropped": 0.3950413223140496,
+    "binary_mb": [
+      "m_stage",
+      "pos_ln_count"
+    ],
+    "sabn_mb": [
+      "age",
+      "m_stage"
+    ],
+    "sa_only": [
+      "age"
+    ],
+    "binary_only": [
+      "pos_ln_count"
+    ],
+    "jaccard": 0.3333333333333333,
+    "binary": {
+      "k": 2,
+      "harrell_c": 0.6493876388493307,
+      "uno_ipcw_c": 0.6431424318643642,
+      "tauc": 0.6678264848294408,
+      "ibs": 0.11010012530017854
+    },
+    "sabn": {
+      "k": 2,
+      "harrell_c": 0.701651951011108,
+      "uno_ipcw_c": 0.7217253484486115,
+      "tauc": 0.7382631949807407,
+      "ibs": 0.1045362464456901
+    }
+  },
+  {
+    "cohort": "TCGA-KIRC (kidney)",
+    "n": 535,
+    "n_events": 177,
+    "median_fu_months": 39.13,
+    "horizon_months": 24,
+    "n_dropped_by_binary": 90,
+    "pct_dropped": 0.16822429906542055,
+    "binary_mb": [
+      "stage_overall"
+    ],
+    "sabn_mb": [
+      "age",
+      "grade",
+      "m_stage",
+      "n_stage",
+      "stage_overall"
+    ],
+    "sa_only": [
+      "age",
+      "grade",
+      "m_stage",
+      "n_stage"
+    ],
+    "binary_only": [],
+    "jaccard": 0.2,
+    "binary": {
+      "k": 1,
+      "harrell_c": 0.7409889512769425,
+      "uno_ipcw_c": 0.7613486813332053,
+      "tauc": 0.7852157440209537,
+      "ibs": 0.14343686489022486
+    },
+    "sabn": {
+      "k": 5,
+      "harrell_c": 0.7674334359717443,
+      "uno_ipcw_c": 0.7812205984775037,
+      "tauc": 0.8089139525478174,
+      "ibs": 0.14205085980627494
+    }
+  }
+]

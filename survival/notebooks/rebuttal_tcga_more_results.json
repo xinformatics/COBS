@@ -1,0 +1,125 @@
+[
+  {
+    "cohort": "TCGA-KIRC (kidney)",
+    "n_patients": 535,
+    "n_events": 177,
+    "median_fu_months": 39.13,
+    "n_train": 374,
+    "n_test": 161,
+    "n_dropped_by_binary": 230,
+    "n_binary_train_used": 211,
+    "n_sabn_train_used": 374,
+    "binary_mb": [
+      "stage_overall"
+    ],
+    "sabn_mb": [
+      "age",
+      "grade",
+      "m_stage",
+      "n_stage",
+      "stage_overall"
+    ],
+    "overlap_mb": [
+      "stage_overall"
+    ],
+    "binary_only_mb": [],
+    "sabn_only_mb": [
+      "age",
+      "grade",
+      "m_stage",
+      "n_stage"
+    ],
+    "jaccard": 0.2,
+    "cindex_binary_mb": {
+      "cindex": 0.7409889512769425,
+      "ci_lower": 0.6632992521579026,
+      "ci_upper": 0.8117686627417453,
+      "n_features": 1
+    },
+    "cindex_sabn_mb": {
+      "cindex": 0.7674334359717443,
+      "ci_lower": 0.6933413295762919,
+      "ci_upper": 0.8327886263933459,
+      "n_features": 5
+    },
+    "cindex_all": {
+      "cindex": 0.768791885527984,
+      "ci_lower": 0.6952950880135664,
+      "ci_upper": 0.8333061797618124,
+      "n_features": 7
+    },
+    "fit_time_binary_s": 0.07369279861450195,
+    "fit_time_sabn_s": 2.3402955532073975,
+    "metrics_binary": {
+      "k": 1,
+      "harrell_c": 0.7409889512769425,
+      "uno_ipcw_c": 0.7613486813332053,
+      "tauc": 0.7852157440209537,
+      "ibs": 0.14343686489022486
+    },
+    "metrics_sabn": {
+      "k": 5,
+      "harrell_c": 0.7674334359717443,
+      "uno_ipcw_c": 0.7812205984775037,
+      "tauc": 0.8089139525478174,
+      "ibs": 0.14205085980627494
+    }
+  },
+  {
+    "cohort": "TCGA-LUAD (lung adeno)",
+    "n_patients": 509,
+    "n_events": 183,
+    "median_fu_months": 21.62,
+    "n_train": 356,
+    "n_test": 153,
+    "n_dropped_by_binary": 284,
+    "n_binary_train_used": 155,
+    "n_sabn_train_used": 356,
+    "binary_mb": [
+      "stage_overall"
+    ],
+    "sabn_mb": [
+      "stage_overall"
+    ],
+    "overlap_mb": [
+      "stage_overall"
+    ],
+    "binary_only_mb": [],
+    "sabn_only_mb": [],
+    "jaccard": 1.0,
+    "cindex_binary_mb": {
+      "cindex": 0.6774570154956485,
+      "ci_lower": 0.6060239358681536,
+      "ci_upper": 0.7544850416081406,
+      "n_features": 1
+    },
+    "cindex_sabn_mb": {
+      "cindex": 0.6774570154956485,
+      "ci_lower": 0.6060239358681536,
+      "ci_upper": 0.7544850416081406,
+      "n_features": 1
+    },
+    "cindex_all": {
+      "cindex": 0.6837189556357461,
+      "ci_lower": 0.6027072188749366,
+      "ci_upper": 0.7623836759311483,
+      "n_features": 6
+    },
+    "fit_time_binary_s": 0.05301523208618164,
+    "fit_time_sabn_s": 0.9180879592895508,
+    "metrics_binary": {
+      "k": 1,
+      "harrell_c": 0.6774570154956485,
+      "uno_ipcw_c": 0.632969390829769,
+      "tauc": 0.6933973324926858,
+      "ibs": 0.1708196525702287
+    },
+    "metrics_sabn": {
+      "k": 1,
+      "harrell_c": 0.6774570154956485,
+      "uno_ipcw_c": 0.632969390829769,
+      "tauc": 0.6933973324926858,
+      "ibs": 0.1708196525702287
+    }
+  }
+]

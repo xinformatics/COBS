@@ -1,0 +1,109 @@
+[
+  {
+    "cohort": "TCGA-BRCA (breast)",
+    "n_patients": 1083,
+    "n_events": 151,
+    "median_fu_months": 28.25,
+    "n_train": 758,
+    "n_test": 325,
+    "n_dropped_by_binary": 731,
+    "n_binary_train_used": 251,
+    "n_sabn_train_used": 758,
+    "binary_mb": [
+      "menopause",
+      "pr_status",
+      "stage_overall"
+    ],
+    "sabn_mb": [
+      "age",
+      "menopause",
+      "n_stage",
+      "pr_status",
+      "stage_overall"
+    ],
+    "overlap_mb": [
+      "menopause",
+      "pr_status",
+      "stage_overall"
+    ],
+    "binary_only_mb": [],
+    "sabn_only_mb": [
+      "age",
+      "n_stage"
+    ],
+    "jaccard": 0.6,
+    "cindex_binary_mb": {
+      "cindex": 0.6662321729796044,
+      "ci_lower": 0.5658125183186496,
+      "ci_upper": 0.7675653273794856,
+      "n_features": 3
+    },
+    "cindex_sabn_mb": {
+      "cindex": 0.7109339058426621,
+      "ci_lower": 0.621056470504091,
+      "ci_upper": 0.7994023864655287,
+      "n_features": 5
+    },
+    "cindex_all": {
+      "cindex": 0.696058886673823,
+      "ci_lower": 0.5948713778628442,
+      "ci_upper": 0.7914451673349582,
+      "n_features": 12
+    },
+    "fit_time_binary_s": 0.23252582550048828,
+    "fit_time_sabn_s": 7.340815544128418
+  },
+  {
+    "cohort": "TCGA-COAD (colorectal)",
+    "n_patients": 605,
+    "n_events": 125,
+    "median_fu_months": 22.34,
+    "n_train": 423,
+    "n_test": 182,
+    "n_dropped_by_binary": 438,
+    "n_binary_train_used": 117,
+    "n_sabn_train_used": 423,
+    "binary_mb": [
+      "adj_pharm",
+      "adj_radiation",
+      "stage_overall",
+      "t_stage"
+    ],
+    "sabn_mb": [
+      "age",
+      "m_stage"
+    ],
+    "overlap_mb": [],
+    "binary_only_mb": [
+      "adj_pharm",
+      "adj_radiation",
+      "stage_overall",
+      "t_stage"
+    ],
+    "sabn_only_mb": [
+      "age",
+      "m_stage"
+    ],
+    "jaccard": 0.0,
+    "cindex_binary_mb": {
+      "cindex": 0.6049558530333239,
+      "ci_lower": 0.4975556588488179,
+      "ci_upper": 0.7102156362399968,
+      "n_features": 4
+    },
+    "cindex_sabn_mb": {
+      "cindex": 0.701651951011108,
+      "ci_lower": 0.612880693259565,
+      "ci_upper": 0.7801951844909797,
+      "n_features": 2
+    },
+    "cindex_all": {
+      "cindex": 0.6196240387354031,
+      "ci_lower": 0.5240633785957858,
+      "ci_upper": 0.7167682335085082,
+      "n_features": 12
+    },
+    "fit_time_binary_s": 0.25172948837280273,
+    "fit_time_sabn_s": 3.332690477371216
+  }
+]

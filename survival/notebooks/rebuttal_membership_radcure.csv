@@ -1,0 +1,13 @@
+feature,in_SA_MB,sel_freq_pct,HR,q_BH,edge_to_survival_pct
+age,yes,100,1.03,2.04e-12,98
+ecog_ps,yes,100,1.83,1.31e-07,100
+gtvp_cm3,yes,100,1.01,4.32e-08,66
+hpv_status,yes,100,0.426,2.53e-13,80
+site,yes,100,0.411,6.86e-06,96
+smoking_py,yes,100,1.01,2.27e-07,82
+tx_modality,yes,100,1.84,5.97e-10,2
+stage_overall,yes,68,2.09,0.000333,6
+t_stage,yes,66,0.806,0.422,-
+n_stage,no,24,-,-,-
+TxN,no,22,-,-,8
+sex,no,2,-,-,-

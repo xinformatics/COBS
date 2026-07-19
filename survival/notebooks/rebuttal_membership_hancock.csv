@@ -1,0 +1,14 @@
+feature,in_SA_MB,sel_freq_pct,HR,q_BH,edge_to_survival_pct
+blood_hemoglobin,yes,94,0.819,0.000475,82
+number_of_positive_lymph_nodes,yes,88,1.06,7.52e-05,28
+age_at_initial_diagnosis,yes,88,1.03,9.03e-05,36
+invasion_burden,yes,86,2.87,4.16e-05,74
+nlr,yes,78,1.08,0.00691,44
+TxN,no,62,-,-,62
+adjuvant_radiotherapy,no,40,-,-,34
+sex,no,30,-,-,-
+hpv_association_p16,no,26,-,-,4
+infiltration_depth_in_mm,no,14,-,-,2
+smoking_status,no,10,-,-,-
+pN_grouped,no,6,-,-,-
+grade_grouped,no,6,-,-,10

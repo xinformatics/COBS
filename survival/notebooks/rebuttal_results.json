@@ -1,0 +1,516 @@
+{
+  "task1_3_radcure": {
+    "cohort": "RADCURE",
+    "mb": [
+      "age",
+      "ecog_ps",
+      "gtvp_cm3",
+      "hpv_status",
+      "site",
+      "smoking_py",
+      "stage_overall",
+      "t_stage",
+      "tx_modality"
+    ],
+    "cox_fdr": [
+      {
+        "feature": "hpv_status",
+        "coef": -0.8542087386975189,
+        "HR": 0.4256198343828172,
+        "p_raw": 2.8139426345316357e-14,
+        "q_BH": 2.5325483710784724e-13,
+        "reject_q05": true
+      },
+      {
+        "feature": "age",
+        "coef": 0.026745836607500698,
+        "HR": 1.0271067166580652,
+        "p_raw": 4.525653448199443e-13,
+        "q_BH": 2.0365440516897495e-12,
+        "reject_q05": true
+      },
+      {
+        "feature": "tx_modality",
+        "coef": 0.6104387933578482,
+        "HR": 1.8412391450588885,
+        "p_raw": 1.9910777983241203e-10,
+        "q_BH": 5.973233394972362e-10,
+        "reject_q05": true
+      },
+      {
+        "feature": "gtvp_cm3",
+        "coef": 0.006333277074437513,
+        "HR": 1.0063533746791864,
+        "p_raw": 1.9202169979385538e-08,
+        "q_BH": 4.320488245361746e-08,
+        "reject_q05": true
+      },
+      {
+        "feature": "ecog_ps",
+        "coef": 0.6065852183433743,
+        "HR": 1.8341574455875145,
+        "p_raw": 7.303663607746591e-08,
+        "q_BH": 1.3146594493943863e-07,
+        "reject_q05": true
+      },
+      {
+        "feature": "smoking_py",
+        "coef": 0.007214946886664663,
+        "HR": 1.0072410373252518,
+        "p_raw": 1.5131458173470128e-07,
+        "q_BH": 2.2697187260205192e-07,
+        "reject_q05": true
+      },
+      {
+        "feature": "site",
+        "coef": -0.8890527035836804,
+        "HR": 0.4110449497886432,
+        "p_raw": 5.338225302348959e-06,
+        "q_BH": 6.8634325315915184e-06,
+        "reject_q05": true
+      },
+      {
+        "feature": "stage_overall",
+        "coef": 0.7390469520494123,
+        "HR": 2.09393893901492,
+        "p_raw": 0.00029606159034532674,
+        "q_BH": 0.0003330692891384926,
+        "reject_q05": true
+      },
+      {
+        "feature": "t_stage",
+        "coef": -0.2158624116144076,
+        "HR": 0.8058461693197408,
+        "p_raw": 0.42242586826565887,
+        "q_BH": 0.42242586826565887,
+        "reject_q05": false
+      }
+    ],
+    "schoenfeld_fdr": [
+      {
+        "feature": "stage_overall",
+        "stat": 19.93872884365323,
+        "p_raw": 7.996396317860107e-06,
+        "q_BH": 7.196756686074097e-05,
+        "violates_q05": true
+      },
+      {
+        "feature": "smoking_py",
+        "stat": 5.640044357319812,
+        "p_raw": 0.01755476296594391,
+        "q_BH": 0.0789964333467476,
+        "violates_q05": false
+      },
+      {
+        "feature": "age",
+        "stat": 3.671411132675043,
+        "p_raw": 0.0553533007305415,
+        "q_BH": 0.10657627236413621,
+        "violates_q05": false
+      },
+      {
+        "feature": "site",
+        "stat": 3.5681442645999826,
+        "p_raw": 0.05889809737224407,
+        "q_BH": 0.10657627236413621,
+        "violates_q05": false
+      },
+      {
+        "feature": "gtvp_cm3",
+        "stat": 3.37030041543796,
+        "p_raw": 0.06638164961677512,
+        "q_BH": 0.10657627236413621,
+        "violates_q05": false
+      },
+      {
+        "feature": "t_stage",
+        "stat": 3.258574932549883,
+        "p_raw": 0.07105084824275747,
+        "q_BH": 0.10657627236413621,
+        "violates_q05": false
+      },
+      {
+        "feature": "hpv_status",
+        "stat": 1.60610730760281,
+        "p_raw": 0.20503985907031408,
+        "q_BH": 0.2636226759475467,
+        "violates_q05": false
+      },
+      {
+        "feature": "tx_modality",
+        "stat": 1.3772831623695885,
+        "p_raw": 0.2405644661970045,
+        "q_BH": 0.27063502447163007,
+        "violates_q05": false
+      },
+      {
+        "feature": "ecog_ps",
+        "stat": 1.0939595855056174,
+        "p_raw": 0.2955955549992425,
+        "q_BH": 0.2955955549992425,
+        "violates_q05": false
+      }
+    ],
+    "n_used": 2174
+  },
+  "task1_3_hancock": {
+    "cohort": "HANCOCK",
+    "mb": [
+      "age_at_initial_diagnosis",
+      "blood_hemoglobin",
+      "invasion_burden",
+      "nlr",
+      "number_of_positive_lymph_nodes"
+    ],
+    "cox_fdr": [
+      {
+        "feature": "invasion_burden",
+        "coef": 1.0527049177762309,
+        "HR": 2.865391292919659,
+        "p_raw": 8.316329571984688e-06,
+        "q_BH": 4.158164785992344e-05,
+        "reject_q05": true
+      },
+      {
+        "feature": "number_of_positive_lymph_nodes",
+        "coef": 0.05935077771961768,
+        "HR": 1.0611474023293135,
+        "p_raw": 3.0093288984570416e-05,
+        "q_BH": 7.523322246142603e-05,
+        "reject_q05": true
+      },
+      {
+        "feature": "age_at_initial_diagnosis",
+        "coef": 0.03197493444752917,
+        "HR": 1.0324916250077654,
+        "p_raw": 5.419470262447061e-05,
+        "q_BH": 9.032450437411769e-05,
+        "reject_q05": true
+      },
+      {
+        "feature": "blood_hemoglobin",
+        "coef": -0.1993916519882787,
+        "HR": 0.8192289778354066,
+        "p_raw": 0.00038035598606864923,
+        "q_BH": 0.00047544498258581154,
+        "reject_q05": true
+      },
+      {
+        "feature": "nlr",
+        "coef": 0.07848473514499776,
+        "HR": 1.0816468438540205,
+        "p_raw": 0.006905560852749481,
+        "q_BH": 0.006905560852749481,
+        "reject_q05": true
+      }
+    ],
+    "schoenfeld_fdr": [
+      {
+        "feature": "blood_hemoglobin",
+        "stat": 4.502209420997343,
+        "p_raw": 0.033851088563183404,
+        "q_BH": 0.169255442815917,
+        "violates_q05": false
+      },
+      {
+        "feature": "invasion_burden",
+        "stat": 3.1934466899997678,
+        "p_raw": 0.07393397532622849,
+        "q_BH": 0.1848349383155712,
+        "violates_q05": false
+      },
+      {
+        "feature": "number_of_positive_lymph_nodes",
+        "stat": 2.345004096724169,
+        "p_raw": 0.12568523119466654,
+        "q_BH": 0.20947538532444424,
+        "violates_q05": false
+      },
+      {
+        "feature": "nlr",
+        "stat": 0.5353547980909179,
+        "p_raw": 0.4643642503262826,
+        "q_BH": 0.5804553129078532,
+        "violates_q05": false
+      },
+      {
+        "feature": "age_at_initial_diagnosis",
+        "stat": 0.25099148365263985,
+        "p_raw": 0.6163778070292787,
+        "q_BH": 0.6163778070292787,
+        "violates_q05": false
+      }
+    ],
+    "n_used": 565
+  },
+  "task2_radcure": {
+    "cohort": "RADCURE",
+    "table": [
+      {
+        "feature": "age",
+        "HR_unstratified": 1.0261684607248411,
+        "HR_stratified": 1.026939632971395,
+        "same_direction": true
+      },
+      {
+        "feature": "ecog_ps",
+        "HR_unstratified": 1.9520176831934795,
+        "HR_stratified": 1.8232640538790488,
+        "same_direction": true
+      },
+      {
+        "feature": "gtvp_cm3",
+        "HR_unstratified": 1.0065611773378946,
+        "HR_stratified": 1.0062211963677343,
+        "same_direction": true
+      },
+      {
+        "feature": "hpv_status",
+        "HR_unstratified": 0.47198770737633045,
+        "HR_stratified": 0.43024438156512274,
+        "same_direction": true
+      },
+      {
+        "feature": "site",
+        "HR_unstratified": 0.34001424372332006,
+        "HR_stratified": 0.4181343470097091,
+        "same_direction": true
+      },
+      {
+        "feature": "smoking_py",
+        "HR_unstratified": 1.0067843170090618,
+        "HR_stratified": 1.007032398966002,
+        "same_direction": true
+      },
+      {
+        "feature": "t_stage",
+        "HR_unstratified": 0.6863418553456244,
+        "HR_stratified": 0.7692593385642208,
+        "same_direction": true
+      },
+      {
+        "feature": "tx_modality",
+        "HR_unstratified": 1.6141902042885186,
+        "HR_stratified": 1.7552539899660364,
+        "same_direction": true
+      }
+    ],
+    "all_same_direction": true
+  },
+  "task6_table": {
+    "radcure": [
+      {
+        "feature": "age",
+        "sel_freq": 1.0,
+        "edge_to_survival": 0.98
+      },
+      {
+        "feature": "ecog_ps",
+        "sel_freq": 1.0,
+        "edge_to_survival": 1.0
+      },
+      {
+        "feature": "gtvp_cm3",
+        "sel_freq": 1.0,
+        "edge_to_survival": 0.66
+      },
+      {
+        "feature": "hpv_status",
+        "sel_freq": 1.0,
+        "edge_to_survival": 0.8
+      },
+      {
+        "feature": "site",
+        "sel_freq": 1.0,
+        "edge_to_survival": 0.96
+      },
+      {
+        "feature": "smoking_py",
+        "sel_freq": 1.0,
+        "edge_to_survival": 0.82
+      },
+      {
+        "feature": "tx_modality",
+        "sel_freq": 1.0,
+        "edge_to_survival": 0.02
+      },
+      {
+        "feature": "stage_overall",
+        "sel_freq": 0.68,
+        "edge_to_survival": 0.06
+      },
+      {
+        "feature": "t_stage",
+        "sel_freq": 0.66,
+        "edge_to_survival": null
+      },
+      {
+        "feature": "n_stage",
+        "sel_freq": 0.24,
+        "edge_to_survival": null
+      },
+      {
+        "feature": "TxN",
+        "sel_freq": 0.22,
+        "edge_to_survival": 0.08
+      },
+      {
+        "feature": "sex",
+        "sel_freq": 0.02,
+        "edge_to_survival": null
+      }
+    ],
+    "hancock": [
+      {
+        "feature": "blood_hemoglobin",
+        "sel_freq": 0.94,
+        "edge_to_survival": 0.82
+      },
+      {
+        "feature": "number_of_positive_lymph_nodes",
+        "sel_freq": 0.88,
+        "edge_to_survival": 0.28
+      },
+      {
+        "feature": "age_at_initial_diagnosis",
+        "sel_freq": 0.88,
+        "edge_to_survival": 0.36
+      },
+      {
+        "feature": "invasion_burden",
+        "sel_freq": 0.86,
+        "edge_to_survival": 0.74
+      },
+      {
+        "feature": "nlr",
+        "sel_freq": 0.78,
+        "edge_to_survival": 0.44
+      },
+      {
+        "feature": "TxN",
+        "sel_freq": 0.62,
+        "edge_to_survival": 0.62
+      },
+      {
+        "feature": "adjuvant_radiotherapy",
+        "sel_freq": 0.4,
+        "edge_to_survival": 0.34
+      },
+      {
+        "feature": "sex",
+        "sel_freq": 0.3,
+        "edge_to_survival": null
+      },
+      {
+        "feature": "hpv_association_p16",
+        "sel_freq": 0.26,
+        "edge_to_survival": 0.04
+      },
+      {
+        "feature": "infiltration_depth_in_mm",
+        "sel_freq": 0.14,
+        "edge_to_survival": 0.02
+      },
+      {
+        "feature": "smoking_status",
+        "sel_freq": 0.1,
+        "edge_to_survival": null
+      },
+      {
+        "feature": "pN_grouped",
+        "sel_freq": 0.06,
+        "edge_to_survival": null
+      },
+      {
+        "feature": "grade_grouped",
+        "sel_freq": 0.06,
+        "edge_to_survival": 0.1
+      }
+    ]
+  },
+  "task7_mice": {
+    "n_rebuilt": 763,
+    "n_listwise_doc": 620,
+    "recovered_doc": 143
+  },
+  "verify_checks": [
+    {
+      "name": "RADCURE Cox q hpv_status",
+      "actual": 2.5325483710784724e-13,
+      "expected": 2.5e-13,
+      "status": "OK"
+    },
+    {
+      "name": "RADCURE Cox q age",
+      "actual": 2.0365440516897495e-12,
+      "expected": 2e-12,
+      "status": "OK"
+    },
+    {
+      "name": "RADCURE Cox q tx_modality",
+      "actual": 5.973233394972362e-10,
+      "expected": 6e-10,
+      "status": "OK"
+    },
+    {
+      "name": "RADCURE Cox q gtvp_cm3",
+      "actual": 4.320488245361746e-08,
+      "expected": 4.3e-08,
+      "status": "OK"
+    },
+    {
+      "name": "RADCURE Cox q ecog_ps",
+      "actual": 1.3146594493943863e-07,
+      "expected": 1.3e-07,
+      "status": "OK"
+    },
+    {
+      "name": "RADCURE Cox q smoking_py",
+      "actual": 2.2697187260205192e-07,
+      "expected": 2.3e-07,
+      "status": "OK"
+    },
+    {
+      "name": "RADCURE Cox q site",
+      "actual": 6.8634325315915184e-06,
+      "expected": 6.9e-06,
+      "status": "OK"
+    },
+    {
+      "name": "RADCURE Cox q stage_overall",
+      "actual": 0.0003330692891384926,
+      "expected": 0.00033,
+      "status": "OK"
+    },
+    {
+      "name": "RADCURE Cox q t_stage",
+      "actual": 0.42242586826565887,
+      "expected": 0.42,
+      "status": "OK"
+    },
+    {
+      "name": "RADCURE PH p stage_overall",
+      "actual": 7.996396317860107e-06,
+      "expected": 8e-06,
+      "status": "OK"
+    },
+    {
+      "name": "RADCURE PH p smoking_py",
+      "actual": 0.01755476296594391,
+      "expected": 0.018,
+      "status": "OK"
+    },
+    {
+      "name": "RADCURE PH p age",
+      "actual": 0.0553533007305415,
+      "expected": 0.055,
+      "status": "OK"
+    },
+    {
+      "name": "HANCOCK PH p blood_hemoglobin",
+      "actual": 0.033851088563183404,
+      "expected": 0.022,
+      "status": "OK"
+    }
+  ]
+}

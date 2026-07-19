@@ -1,0 +1,83 @@
+{
+  "task4": {
+    "RADCURE": {
+      "binary_mb": [
+        "age",
+        "ecog_ps",
+        "gtvp_cm3",
+        "site",
+        "t_stage",
+        "tx_modality",
+        "TxN"
+      ],
+      "sa_mb": [
+        "age",
+        "ecog_ps",
+        "gtvp_cm3",
+        "hpv_status",
+        "site",
+        "smoking_py",
+        "stage_overall",
+        "t_stage",
+        "tx_modality"
+      ],
+      "binary_rsf": {
+        "cindex": 0.7711331000014403,
+        "ci_lower": 0.7291651762611976,
+        "ci_upper": 0.809072854082527,
+        "n_features": 33
+      },
+      "sa_rsf": {
+        "cindex": 0.8038859842428956,
+        "ci_lower": 0.7679695503540506,
+        "ci_upper": 0.8390165256822918,
+        "n_features": 24
+      },
+      "delta_cindex": 0.03275288424145528
+    },
+    "HANCOCK": {
+      "binary_mb": [
+        "infiltration_depth_in_mm",
+        "invasion_burden",
+        "pN_grouped"
+      ],
+      "sa_mb": [
+        "age_at_initial_diagnosis",
+        "blood_hemoglobin",
+        "invasion_burden",
+        "nlr",
+        "number_of_positive_lymph_nodes"
+      ],
+      "binary_rsf": {
+        "cindex": 0.6788761706555672,
+        "ci_lower": 0.580590550486761,
+        "ci_upper": 0.7685047289498536,
+        "n_features": 8
+      },
+      "sa_rsf": {
+        "cindex": 0.7263267429760666,
+        "ci_lower": 0.6383963880965695,
+        "ci_upper": 0.807686796431153,
+        "n_features": 7
+      },
+      "delta_cindex": 0.04745057232049943
+    }
+  },
+  "task5": {
+    "RADCURE": {
+      "n_train": 2174,
+      "structure_pass_sec": 137.0,
+      "structure_pass_runs": [137.5, 136.1, 130.5],
+      "n100_pass_sec": 2.5,
+      "bootstrap50_est_min": 114.0
+    },
+    "HANCOCK": {
+      "n_train": 565,
+      "structure_pass_sec": 13.2,
+      "structure_pass_runs": [13.2, 13.2, 13.9],
+      "n100_pass_sec": 2.5,
+      "bootstrap50_est_min": 11.0
+    },
+    "note": "Single ensemble pass is PC-dominated on large n: RADCURE ~137s (n=2174), HANCOCK ~13s (n=565), n=100 ~2.5s. 50-bootstrap = 50x single pass (RADCURE ~114 min, HANCOCK ~11 min). CONTRADICTS rebuttal draft claim of <30s/cohort and 2-3 min bootstrap for RADCURE; HANCOCK <30s holds."
+  }
+}
